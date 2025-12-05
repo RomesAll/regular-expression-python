@@ -18,6 +18,8 @@ match3 = re.fullmatch(r'\d{3}', '123') # этот метод ищет строг
 
 iter = re.finditer(r'\d{3}', '123-asdfas-123') # возвращает итератор с match объектами со всеми вхождениями(совпадениями)
 
+print(re.findall(r'\d{2}', 'asdf123-24sdsd-asd')) # возвращает список со всеми собпадениями
+
 print(match1.span())
 print(match2.span())
 print(match3)
