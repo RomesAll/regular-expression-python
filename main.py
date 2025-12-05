@@ -17,8 +17,9 @@ match3 = re.fullmatch(r'\d{3}', '123') # этот метод ищет строг
                                        # То есть, если в строке есть несовпадение по шаблону, то метод вернет None
 
 iter = re.finditer(r'\d{3}', '123-asdfas-123') # возвращает итератор с match объектами со всеми вхождениями(совпадениями)
-
 print(re.findall(r'\d{2}', 'asdf123-24sdsd-asd')) # возвращает список со всеми собпадениями
+print(re.split(r'\d{2}', 'asdf123-24sdsd-asd')) # обрезает строку по шаблону [asdf, sdsd, ...]
+
 
 print(match1.span())
 print(match2.span())
